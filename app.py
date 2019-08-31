@@ -1,14 +1,15 @@
 import os
-from flask import Flask
+from flask import Flask, escape, request
 from flask_cors import CORS
+from flask import render_template
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder = 'templates', static_folder = 'templates/')
 
 cors = CORS(app, resource={r"/*":{"origins": "*"}})
 
 @app.route("/", methods=['GET'])
 def index():
-    return "<h1>Hello World!</h1>"
+    return render_template("index.html")
 
 @app.route("/deploy", methods=['GET'])    
 def deploy():
