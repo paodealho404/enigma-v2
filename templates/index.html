@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Enigma</title>
+  <title>Enigma 2.0</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
   <link href="css/resume.min.css" rel="stylesheet">
+
+  <!-- Extra styles -->
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top" class=" bg-light ">
+<body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top" id="sideNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none text-primary">ENIGMA</span>
-      <span class="d-none d-lg-block ">        
-      </span>
+      <img class="fa-pull-left col-3 img-fluid m-0 p-0 d-block d-lg-none" src="img/lock_min.svg" alt="">
+      <h3 class="text-white d-block d-lg-none">ENIGMA 2.0</h3>
+      <div class="d-none d-lg-block">
+        <h3 class="text-white">ENIGMA 2.0</h3>
+        <img class="col-12 img-fluid mx-auto mb-2 bg-white rounded-circle" src="img/lock.svg" alt="">
+      </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,102 +44,422 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger text-dark" href="#inicio">Inicio</a>
+          <a class="nav-link js-scroll-trigger" href="#home">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger text-dark" href="#criptografar">Criptografar</a>
+          <a class="nav-link js-scroll-trigger" href="#chaves">GERAR CHAVE PÚBLICA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger text-dark" href="#descriptografar">Descriptografar</a>
-        </li>        
+          <a class="nav-link js-scroll-trigger" href="#criptografar">CRIPTOGRAFAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#descriptografar">DESCRIPTOGRAFAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#sobre">SOBRE</a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="inicio">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="home">
       <div class="w-100">
-        <h1 class="mb-0 ">ENIGMA
+        <h1 class="mb-0">
+          <img class="fa-pull-left col-1 img-fluid m-0 p-0" src="img/lock_red.svg" alt="">
+          ENIGMA
           <span class="text-danger">2.0</span>
         </h1>
-        <div class="subheading mb-5">Criptografia Assimétrica RSA   
-        </div>        
-        <p class="lead mb-5">Requisito avaliativo para a disciplina de Matemática Discreta</p>
-        <p class="lead mb-5">UFAL - Engenharia da Computação - 2019.1</p>
-        <p class="lead mb-5">Integrantes:  Bruno Lemos Stewart, João Pedro Stewart,  José Ferreira Neto Stewart, Pedro Henrique Guidorizzi, Tiago Beltrão</p>
-        <div class="subheading mb-5">Mais informações sobre o projeto:   
+        <div class="subheading mb-5">BY
+          <a href="mailto:bll@ic.ufal.br" class="text-danger">BRUNO LEMOS</a>
+          <a href="mailto:jpcm@ic.ufal.br" class="text-dark">JOÃO PEDRO CAJUEIRO</a>
+          <a href="mailto:jfln@ic.ufal.br" class="text-danger">JOSÉ FERREIRA</a>
+          <a href="mailto:phbn@ic.ufal.br" class="text-dark">PEDRO HENRIQUE BRITO</a>
+          E
+          <a href="mailto:tbsr@ic.ufal.br" class="text-danger">TIAGO BELTRÃO</a>
         </div>
+        <p class="lead mb-5">Enigma 2.0 é um projeto de Matemática Discreta envolvendo criptografia RSA, feito por alunos de Engenharia de Computação da UFAL. O nome escolhido faz referência à máquina de mesmo nome, que foi amplamente utilizada na 2º Guerra Mundial para encriptar e decriptar mensagens. A mesma foi notoriamente resposável pelo surgimento da computação, pois, sem computadores era humanamente impossível decriptar as mensagens.</p>
         <div class="social-icons">
-          <a class= "rounded-circle bg-danger"href="https://github.com/paodealho404/enigma-v2/">
-            <i class="fab fa-github"></i>
-          </a>          
+          <a href="http://www.ufal.edu.br/unidadeacademica/ic" target="_blank" class="bg-white">
+            <img src="img/logo-ic.png" style="width: 140%">
+          </a>
+          <a href="http://www.ufal.edu.br/" target="_blank" class="bg-white">
+            <img src="img/logo-ufal.png" style="width: 150%">
+          </a>
         </div>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="criptografar">
-      <div class="w-100">
-        <h2 class="mb-5">Criptografar</h2>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Para Criptografar</h3>
-            <div class="subheading mb-3">Insira sua mensagem </div>
-            <p class="text-success">Reza pra dar certo</p>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="chaves">
+        <div class="w-100">
+          <div class="collapse show" id="generate-keys-in">
+          <h2 class="mb-0">GERAR <span class="text-danger">CHAVES</span></h2>
+            <h4 class="mb-5 subheading" id="generate-keys-subtitle"></h4>
+            <textarea hidden id="private-key"></textarea>
+          <div id="informar" class="collapse show">
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">INFORME P</h3>
+                <label class="subheading mb-3" for="num-p" id="num-p-label">DEVE SER UM NÚMERO PRIMO MAIOR QUE 23</label><br/>
+              </div>
+              <input type="number" id="num-p" class="subheading form-control col-6" onchange="ehPrimo('num-p')">
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">INFORME Q</h3>
+                <label class="subheading mb-3" for="num-q" id="num-q-label">DEVE SER UM NÚMERO PRIMO MAIOR QUE 23</label>
+              </div>
+              <input type="number" id="num-q" class="subheading form-control col-6" onchange="ehPrimo('num-q')">
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">INFORME UM EXPOENTE E</h3>
+                <label class="subheading mb-3" for="num-e" id="num-e-label">DEVE SER UM EXPOENTE RELATIVAMENTE PRIMO A (P-1)(Q-1)</label>
+              </div>
+              <input type="number" id="num-e" class="subheading form-control col-6" onchange="mdc('num-e')">
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-danger">Vai lá Hacker</span>
+
+          <div id="gerar" class="collapse">
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">INFORME O TAMANHO DE P E Q</h3>
+                <label class="subheading mb-3" for="nums-size" id="nums-size-label">RECOMENDADO: 100</label><br/>
+              </div>
+              <input type="number" id="nums-size" class="subheading form-control col-6">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1 pr-0">
+              <label class="switch" onchange="toggleKeys()">
+                <input type="checkbox" id="gerar-chaves">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="col-10 ml-2">
+              <span id="generate" class="subheading">QUERO QUE O ENIGMA 2.0 GERE A MINHA CHAVE</span><br/>
+              <span id="no-generate" class="subheading text-black">QUERO INFORMAR OS NÚMEROS DA CHAVE</span>
+            </div>
+          </div>
+          <div class="btn-group fa-pull-right btn-block">
+            <button class="btn btn-secondary btn-lg fa-pull-right collapse" id="private-key-txt" onclick="salvarArquivo('private-key', 'Chave Privada')">FAZER DOWNLOAD DO TXT</button>
+            <button class="btn btn-danger btn-lg fa-pull-right" onclick="geraChave()">GERAR CHAVE</button>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Teu resultado: </h3>
-            <div class="subheading mb-3">EI! Não temos 100% de certeza que vai estar sempre seguro</div>
-            <p class="text-info">Desejamos Boa Sorte! Que os bons ventos e os espíritos carreguem seu segredo...</p>
+        <div class="collapse" id="generate-keys-out">
+          <h2 class="mb-5 text-danger">CHAVE PÚBLICA</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+            <div class="resume-content">
+              <h3 class="mb-0">AQUI ESTÁ A SUA CHAVE PÚBLICA:</h3>
+              <span class="subheading mb-0">ANOTE OU FAÇA DOWNLOAD</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right text-danger">
-            <span class="text-danger">FBI! Open up!</span>
-          </div>
-        </div>
 
+          <div class="flex-wrap subheading col-12 bordered mb-3 mt-0">
+            <p id="public-key" style="text-transform: none; word-break: break-all"> </p>
+          </div>
+          <button onclick="salvarArquivo('public-key', 'Chave Publica')" class="btn btn-secondary btn-lg fa-pull-right">FAZER DOWNLOAD DO TXT</button>
+        </div>
       </div>
+    </section>
 
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="criptografar">
+      <div class="w-100">
+        <div class="collapse show" id="crypt-in">
+          <h2 class="mb-5 text-danger">CRIPTOGRAFAR</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">INFORME O TEXTO A SER CRIPTOGRAFADO OU SELECIONE UM ARQUIVO</h3>
+              <label class="subheading mb-3" for="txt-crip"></label>
+            </div>
+          </div>
+
+          <textarea id="txt-crip" style="height: 150px; resize: none; text-transform: none" class="form-control col-12 mb-2 subheading"></textarea>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger" id="load-file-addon">Apenas .txt</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" aria-describedby="load-file-addon" id="load-file" onchange="abreArquivo()">
+              <label class="custom-file-label" id="load-file-label" for="load-file">Escolha um arquivo</label>
+            </div>
+          </div>
+
+          <span class="subheading text-danger" id="crypt-error"></span>
+
+          <div class="resume-item d-flex flex-column flex-md-row mt-3 justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">INFORME E E N (CHAVE PÚBLICA) OU SELECIONE UM ARQUIVO</h3>
+            </div>
+          </div>
+
+          <div class="form-inline mt-2 col-12 p-0 mb-0">
+            <label class="sr-only" for="num-p-dec">E</label>
+            <div class="input-group mb-2 col-6 px-0">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></div>
+              </div>
+              <input type="number" class="subheading form-control" id="num-e-crip" placeholder="E">
+            </div>
+
+            <label class="sr-only" for="num-p-dec">N</label>
+            <div class="input-group mb-2 col-6 px-1">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></div>
+              </div>
+              <input type="number" class="subheading form-control" id="num-n-crip" placeholder="N">
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger" id="load-file-addon-key">Apenas .txt</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" aria-describedby="load-file-addon-key" id="load-file-key" onchange="abreArquivoKey()">
+              <label class="custom-file-label" id="load-file-key-label" for="load-file-key">Escolha um arquivo</label>
+            </div>
+          </div>
+
+          <span class="subheading text-danger" id="crypt-key-error"></span>
+
+          <div class="row mt-3">
+            <div class="col-1 pr-0">
+              <label class="switch" onchange="toggleCrypt()">
+                <input type="checkbox" id="use-ascii-crypt">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="col-10 ml-2">
+              <span id="ascii-crypt" class="subheading">UTILIZAR CODIFICAÇÃO ASCII</span><br/>
+              <span id="no-ascii-crypt" class="subheading text-black">UTILIZAR APENAS MAIÚSCULAS</span>
+            </div>
+          </div>
+
+          <span class="subheading text-danger small-subh" id="no-ascii-info-danger">ATENÇÃO:</span><span class="subheading mb-3 small-subh" id="no-ascii-info"> INFORME APENAS LETRAS MAIÚSCULAS (A-Z) E ESPAÇOS, SEM ACENTOS</span>
+
+          <div class="btn-group fa-pull-right btn-block">
+            <button onclick="limpaTxtCrypt()" class="btn btn-dark btn-lg">LIMPAR TEXTO</button>
+            <button onclick="criptografar()" class="btn btn-danger btn-lg">CRIPTOGRAFAR</button>
+          </div>
+        </div>
+
+        <div class="collapse" id="crypt-out">
+          <h2 class="mb-5 text-danger">TEXTO CRIPTOGRAFADO</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+            <div class="resume-content">
+              <h3 class="mb-0">AQUI ESTÁ O SEU TEXTO CRIPTOGRAFADO:</h3>
+              <label class="subheading mb-0" for="num-p">ANOTE OU FAÇA DOWNLOAD</label>
+            </div>
+          </div>
+
+          <div class="flex-wrap subheading col-12 bordered mb-3 mt-0">
+            <p id="crypt-text" style="text-transform: none; word-break: break-all"> </p>
+          </div>
+
+          <button onclick="salvarArquivo('crypt-text', 'Texto Criptografado')" class="btn btn-secondary btn-lg fa-pull-right">FAZER DOWNLOAD DO TXT</button>
+        </div>
+      </div>
     </section>
 
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="descriptografar">
       <div class="w-100">
-        <h2 class="mb-5">Descriptografar</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"></h3>
-            <div class="subheading mb-3"></div>
-            <div></div>
-            <p></p>
+        <div class="collapse show" id="decrypt-in">
+          <h2 class="mb-5 text-danger">DESCRIPTOGRAFAR</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">INFORME O TEXTO A SER DESCRIPTOGRAFADO OU SELECIONE UM ARQUIVO</h3>
+              <label class="subheading mb-3" for="txt-decrip"></label>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"></span>
+
+          <textarea id="txt-decrip" style="height: 150px; resize: none; text-transform: none" class="form-control col-12 mb-2 subheading"></textarea>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger" id="load-file-addon-dec">Apenas .txt</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" aria-describedby="load-file-addon-dec" id="load-file-dec" onchange="abreArquivoDec()">
+              <label class="custom-file-label" id="load-file-label-dec" for="load-file">Escolha um arquivo</label>
+            </div>
+          </div>
+
+          <span class="subheading text-danger" id="decrypt-error"></span>
+
+          <h3 class="mb-0 mt-3">INFORME P, Q E E (CHAVE PRIVADA) OU SELECIONE UM ARQUIVO</h3>
+
+          <div class="form-inline mt-2 col-12 p-0 mb-0">
+            <label class="sr-only" for="num-p-dec">P</label>
+            <div class="input-group mb-2 col-4 px-0">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></div>
+              </div>
+              <input type="number" class="subheading form-control" id="num-p-dec" placeholder="P">
+            </div>
+
+            <label class="sr-only" for="num-p-dec">Q</label>
+            <div class="input-group mb-2 col-4 px-1">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></div>
+              </div>
+              <input type="number" class="subheading form-control" id="num-q-dec" placeholder="Q">
+            </div>
+
+            <label class="sr-only" for="num-e-dec">E</label>
+            <div class="input-group mb-2 col-4 px-0">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></div>
+              </div>
+              <input type="number" class="subheading form-control" id="num-e-dec" placeholder="E">
+            </div>
+          </div>
+
+          <div class="input-group mt-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger" id="load-file-addon-key-dec">Apenas .txt</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" aria-describedby="load-file-addon-key-dec" id="load-file-key-dec" onchange="abreArquivoKeyDec()">
+              <label class="custom-file-label" id="load-file-key-dec-label" for="load-file-key-dec">Escolha um arquivo</label>
+            </div>
+          </div>
+
+          <span class="subheading text-danger" id="decrypt-key-error"></span>
+
+        <div class="row mt-3">
+          <div class="col-1 pr-0">
+            <label class="switch" onchange="toggleDecrypt()">
+              <input type="checkbox" id="use-ascii-decrypt">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="col-10 ml-2">
+            <span id="ascii-decrypt" class="subheading">UTILIZAR CODIFICAÇÃO ASCII</span><br/>
+            <span id="no-ascii-decrypt" class="subheading text-black">UTILIZAR APENAS MAIÚSCULAS</span>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0"></h3>
-            <div class="subheading mb-3"></div>
-            <p></p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"></span>
-          </div>
+        <div class="btn-group fa-pull-right btn-block">
+          <button onclick="limpaTxtDecrypt()" class="btn btn-dark btn-lg">LIMPAR TEXTO</button>
+          <button onclick="descriptografar()" class="btn btn-danger btn-lg">DESCRIPTOGRAFAR</button>
         </div>
-
       </div>
-    </section>  
+
+        <div class="collapse" id="decrypt-out">
+          <h2 class="mb-5 text-danger">TEXTO DESCRIPTOGRAFADO</h2>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+            <div class="resume-content">
+              <h3 class="mb-0">AQUI ESTÁ O SEU TEXTO DESCRIPTOGRAFADO:</h3>
+              <label class="subheading mb-0" for="num-p">ANOTE OU FAÇA DOWNLOAD</label>
+            </div>
+          </div>
+
+          <div class="flex-wrap subheading col-12 bordered mb-3 mt-0">
+            <p id="decrypt-text" style="text-transform: none"> </p>
+          </div>
+
+          <button onclick="salvarArquivo('decrypt-text', 'Texto Descriptografado')" class="btn btn-secondary btn-lg fa-pull-right">FAZER DOWNLOAD DO TXT</button>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sobre">
+      <div class="w-100">
+        <h2 class="mb-5 text-danger">SOBRE</h2>
+        <p>Somos alunos ainda em nosso 1º período nessa vasta jornada ante o conhecimento proveniente do curso. <strong>José Ferreira</strong> e <strong>Pedro Henrique Brito</strong>, advindos do IFAL, são nossos representantes e  colaboradores na "beleza" do projeto, sendo os principais resposáveis pela implementação WEB,  integração e conceitos matemáticos, respectivamente. <strong>Bruno Lemos</strong> e <strong>Tiago Beltrão</strong>, os <i>typewriters</i> do projeto, responsáveis pela implementação do backend.
+         </p>
+        <p class="mb-0">E por último, mas não menos importante, <strong>João Pedro Cajueiro</strong> foi responsável por pesquisas sobre o projeto em geral. Também responsável pela administração do repositório no <strong>GitHub</strong> (Visitem-nos). Inclusive, ele que redigiu os textos :) !</p><br/>
+
+        <div class="social-icons mb-3">
+          <a class= "rounded-circle bg-danger" target="_blank" href="https://github.com/paodealho404/enigma-v2/">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <!-- Team Member 1 -->
+          <div class="col-xl-2 col-md-4 mb-4">
+            <a href="https://github.com/CaosMen" target="_blank">
+              <div class="card border-0 shadow">
+                <img src="img/bll.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">BRUNO LEMOS</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="col-xl-2 col-md-4 mb-4">
+            <a href="https://github.com/Jpcajueiro" target="_blank">
+              <div class="card border-0 shadow">
+                <img src="img/jpcm.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">JOÃO PEDRO CAJUEIRO</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="col-xl-2 col-md-4 mb-4">
+            <a href="https://github.com/jflnetobr" target="_blank">
+              <div class="card border-0 shadow">
+                <img src="img/jfln.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">JOSÉ FERREIRA</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="col-xl-2 col-md-4 mb-4">
+            <a href="https://github.com/paodealho404" target="_blank">
+              <div class="card border-0 shadow">
+                <img src="img/phbn.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">PEDRO HENRIQUE BRITO</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Team Member 5 -->
+          <div class="col-xl-2 col-md-4 mb-4">
+            <a href="https://github.com/paodealho404" target="_blank">
+              <div class="card border-0 shadow">
+                <img src="img/tbsr.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-0">TIAGO BELTRÃO</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
   </div>
 
   <!-- Bootstrap core JavaScript -->
@@ -144,6 +472,11 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
+  <!-- Extra scripts -->
+  <script src="js/scripts.js"></script>
+
+  <!-- Biblioteca de gravação do arquivo -->
+  <script type="text/javascript" src="js/FileSaver.min.js"></script>
 </body>
 
 </html>
