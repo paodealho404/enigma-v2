@@ -373,6 +373,7 @@ function criptografar() {
         var txt = $("#txt-crip").val();
         var e = $("#num-e-crip").val();
         var n = $("#num-n-crip").val();
+        var sep = $("#sep-crip").val();
         var flag = 0;
         if($("#use-ascii-crypt").val()=='on') {
             for(i=0;i<txt.length;i++){
@@ -384,7 +385,7 @@ function criptografar() {
             }
             if(!flag)
             {
-                $.post("encrypt", "&txt=" + txt + "&e=" + e + "&n=" + n + "&opt=1", function (response) {
+                $.post("encrypt", "&txt=" + txt + "&e=" + e + "&n=" + n + "&sep=" + sep + "&opt=1", function (response) {
                     $('#crypt-text').text(response.crypt);
                     $('#crypt-in').collapse('toggle');
                     $('#crypt-out').collapse('toggle');
@@ -392,7 +393,7 @@ function criptografar() {
             }
         }
         else{
-            $.post("encrypt", "&txt=" + txt + "&e=" + e + "&n=" + n + "&opt=0", function (response) {
+            $.post("encrypt", "&txt=" + txt + "&e=" + e + "&n=" + n + "&sep=" + sep + "&opt=0", function (response) {
                 $('#crypt-text').text(response.crypt);
                 $('#crypt-in').collapse('toggle');
                 $('#crypt-out').collapse('toggle');

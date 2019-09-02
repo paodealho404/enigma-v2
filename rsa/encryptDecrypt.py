@@ -18,20 +18,20 @@ def inverse_multiplicative(number_e, number_pi):
         if gcd == 1:
                 return x % number_pi
 
-def encrypt(text, number_e, number_n, opt):        
+def encrypt(text, number_e, number_n, opt, sep):
         encrypt_text = ""
         if(opt==1):
                 for i in range(0, len(text)):
                         letter = DIC.index(text[i])
                         encrypt_text += str(pow(letter, number_e, number_n))
                         if(i+1 != len(text)):
-                                encrypt_text += " "
+                                encrypt_text += sep
         else:
                 for i in range(0, len(text)):
                         letter = ord(text[i])
                         encrypt_text += str(pow(letter, number_e, number_n))
                         if(i+1 != len(text)):
-                                encrypt_text += "."
+                                encrypt_text += sep
         return encrypt_text
 
 def decrypt(text, number_d, number_n, opt):

@@ -34,7 +34,8 @@ def encrypt():
     e = int(request.form.get("e"))
     n = int(request.form.get("n"))
     opt = int(request.form.get("opt"))
-    crypt = encryptDecrypt.encrypt(txt,e,n,opt)
+    sep = request.form.get("sep")
+    crypt = encryptDecrypt.encrypt(txt,e,n,opt,sep)
     return jsonify(crypt=str(crypt))
 
 @app.route("/decrypt", methods=['POST'])    
